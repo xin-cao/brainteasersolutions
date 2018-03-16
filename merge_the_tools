@@ -1,7 +1,7 @@
 """
   given a string of length n, and a number k, split string into n/k parts. Print each n/k substring without repeating letters. E.g. 
   input: 
-  AABCAAADA
+  AABCAAADA, 3
   output: 
   AB
   CA

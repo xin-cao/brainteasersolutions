@@ -1,0 +1,19 @@
+"""
+  given a string of length n, and a number k, split string into n/k parts. Print each n/k substring without repeating letters. E.g. 
+  input: 
+  AABCAAADA
+  output: 
+  AB
+  CA
+  AD
+  
+  It is guaranteed n is a multiple of k.
+"""
+def merge_the_tools(string, k):
+    p = len(string)//k
+    for i in range(p):
+        result = ""
+        for j in range(i*k, (i*k)+k):
+            if string[j] not in result:
+                result += string[j]
+        print(result)
